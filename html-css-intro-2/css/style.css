@@ -1,0 +1,44 @@
+
+/* # seleziona tutti gli elementi che hanno come classe font-yellow */
+
+/*  */
+
+/* § Selezione by html tag */
+p{
+    text-align: justify;
+    font-size: 2rem;
+    /* color: red; */
+}
+
+article{
+    text-align: center;
+}
+
+/* § Selezione by html class */
+.font{
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.font-yellow{
+    color: rgb(227, 191, 71);
+}
+
+.article-separator{
+    width: 50%;
+    height: 2.5em;
+    text-align: center;
+
+    /* background-image: url('https://cdn-icons-png.flaticon.com/128/753/753305.png');
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: cover; */
+    background: url("https://cdn-icons-png.flaticon.com/128/753/753305.png") repeat-x center;
+    border: solid 2px black;
+}
+
+/* § Selezione by html id */
+#main-title{
+    /* ? proprietà : valore */
+    font-size: 40px;
+}
+
