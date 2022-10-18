@@ -1,0 +1,163 @@
+/* RESET */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-centered{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 62.5%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.crazy-bordered{
+    border: 2px dashed black;
+}
+
+
+.col{
+    height: 480px;
+}
+
+.big-col{
+    width: 65%;
+    background-color: #1e8ffe;
+
+}
+
+.small-col{
+    width: 35%;
+    background-color: #febfca;
+}
+
+.bg-grey{
+    background-color: #d2d2d2;
+}
+
+
+header{
+    background-color: #add8e6;
+    align-items: center;
+    /* height: 80px; */
+    flex-direction: column;
+}
+
+main section {
+    height: 600px;
+    /* background-color: aqua; */
+}
+
+footer{
+    background-color: #23272a;
+}
+
+main section.king {
+    height: 900px;
+    /* background-color: aqua; */
+}
+
+
+nav.header-top{
+    height: 45px;
+    margin: 1rem;
+    /* line-height: 40px; */
+}
+
+nav div.logo,
+nav div.login{
+    flex-basis: 20%;
+    /* width: 20%; */
+    background-color: orange;
+    padding:.75rem;
+
+}
+
+nav ul.main-menu{
+    flex-basis: 80%;
+    background-color: orange;
+    padding:.75rem;
+    text-align: center;
+}
+
+nav ul.main-menu li{
+    display: inline;
+}
+
+
+div.big-content{
+    background-color: #228a22;
+    height: 800px;
+    width: 100%;
+}
+
+footer{
+    padding: 2rem;
+}
+
+footer section.footer-top{
+    height: 500px;
+    background-color: #7fffd4;
+}
+
+footer section.footer-top aside{
+    width: 30%;
+    height: 100%;
+    background-color: #f08080;
+
+}
+
+footer section.footer-top nav{
+    width: 70%;
+    height: 100%;
+    background-color: #20b2aa;
+}
+
+footer .footer-top nav ul{
+    width: 25%;
+    height: 100%;
+    border: 2px dashed white;
+}
+
+footer hr{
+    margin: 2rem 0;
+}
+
+footer section.footer-bottom{
+    height: 100px;
+    background-color: #7fffd4;
+    justify-content: space-between;
+}
+
+footer .footer-logo,
+footer .footer-button{
+    background-color: rgb(246, 136, 154);
+    padding: .5rem;
+    font-size: 1.25rem;
+}
+
+
+
+div#jumbotron{
+    background-color: #00008a;
+    height: 450px;
+    width: 100%;
+}
+
+div#jumbotron .jumbo-content{
+    width: 45%;
+    height: 350px;
+    background-color: #ed81ed;
+}
+
+
