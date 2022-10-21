@@ -1,0 +1,149 @@
+/* RESET */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    height: 70px;
+    padding: 1rem;
+    background-color: rgb(255, 106, 0);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+
+main{
+    padding-top: 70px;
+}
+
+header nav{
+    height: 100%;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul>li{
+    display: inline;
+}
+
+
+nav ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+
+
+img,
+header nav>a{
+    height: 100%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 2.5rem 0;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-centered{
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.products{
+    padding: 4rem 0 0;
+    flex-wrap: wrap;
+}
+
+div.product{
+    /* display: inline-block; */
+    width: calc(96% / 3 ) ;
+    /* border: 2px solid black; */
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+div.product img{
+    width: 100%;
+}
+
+div.product img.secondary-image,
+div.product:hover img.main-image{
+    display: none;
+}
+
+div.product:hover img.secondary-image{
+    display:inline-block;
+}
+
+div.product span{
+    font-size: .9rem;
+}
+
+div.product span.model{
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+div.product span.price{
+    color: red;
+    font-weight: 800;
+}
+
+div.product div.product-badges{
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+}
+
+div.product-badges .badge{
+    display: inline-block;
+    background-color: aquamarine;
+    padding: .15rem .75rem;
+    font-weight: 800;
+    color: white;
+}
+
+div.badge.badge-discount{
+    background-color: red;
+}
+
+div.badge.badge-eco{
+    background-color: green;
+}
+
+div.product-details div.favourite{
+    position: absolute;
+    top: 2%;
+    right: 0;
+
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: white;
+}
+
+div.product-details div.favourite:hover{
+    color: red;
+}
