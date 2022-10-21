@@ -1,0 +1,119 @@
+/* RESET */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    min-width: 880px;
+}
+
+
+footer{
+    height: 80px;
+    background-color: #222222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.font-green{
+    color: rgb(20, 188, 20);
+}
+
+section.buttons{
+    text-align: end;
+    height: 65px;
+    /* background-color: blueviolet; */
+}
+
+section.buttons button{
+    border: none;
+    border-radius: .33rem;
+
+    background-color: #4a4a4a;
+    color: white;
+
+    padding: .33rem;
+    margin-top: .33rem;
+}
+
+section.participants{
+    height: calc(100vh - 145px);
+    /* background-color: black; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+
+    overflow-y: auto;
+}
+
+section.participants article.participant{
+    width: 280px;
+    height: 150px;
+
+    color: white;
+    background-color: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+
+    position: relative;
+
+    margin: 3px;
+}
+
+section.participants article.participant img{
+    width: 100%;
+    display: block;
+}
+
+article.participant span.participant-name{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    background-color: rgba(0,0,0, .6);
+    padding: 0 .25rem;
+}
+
+
+footer>section{
+    /* background-color: lime; */
+
+    display: flex;
+
+}
+
+
+footer section.footer-end button{
+    height: 100%;
+    background-color: #4a4a4a;
+    color: red;
+    font-size: 1.05rem;
+    padding: 0 1.25rem;
+    border: none;
+}
+
+footer div.icon{
+    display: flex;
+    flex-direction: column;
+    padding: .75rem .5rem;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+
+    font-size: 0.8rem;
+}
+
+footer div.icon i{
+    font-size: 2.1rem;
+}
+
+footer div.icon i.fa-angle-up{
+    font-size: 1.1rem;
+}
