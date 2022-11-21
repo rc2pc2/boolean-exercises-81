@@ -1,0 +1,183 @@
+/* RESET */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: black;
+    width: 233px;
+    height: calc(100vh - 100px);
+    color:white;
+}
+
+main{
+    width: calc(100% - 233px);
+    background-color: blue;
+}
+
+footer{
+    background-color: grey;
+    height: 100px;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* UTILITIES */
+
+.flex{
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-between{
+    justify-content: space-between;
+}
+
+.flex-centered{
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-align-center{
+    align-items: center;
+}
+
+header #upper-nav{
+    /* height: 38vh; */
+    color: #81818b;
+    /* background-color: chartreuse; */
+}
+
+header #upper-nav .logo,
+header #upper-nav .logo-xs  {
+    padding: 1rem;
+}
+
+header #upper-nav .logo img{
+    max-width: 70%;
+}
+
+header #upper-nav .logo-xs  {
+    display: none;
+}
+
+
+header #upper-nav nav.main-menu ul{
+    margin-bottom: 1rem;
+}
+
+header #upper-nav nav.main-menu li{
+    padding: .5rem 1.5rem ;
+    border-left: 4px solid transparent;
+}
+
+img.icon{
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 0.3rem;
+}
+
+header #upper-nav nav.main-menu li.active{
+    /* padding: .5rem 1.5rem ; */
+    border-left: 4px solid lime;
+    color: white;
+}
+
+header #upper-nav nav.main-menu li:hover{
+    border-left: 4px solid white;
+    color: white;
+}
+
+header section.playlists h2,
+header section.playlists a,
+header section.playlists li,
+section#lower-nav
+{
+    padding: .5rem 1.5rem ;
+}
+
+header section.playlists h2  {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: white;
+}
+
+header section.playlists a{
+    padding: 1rem 1.5rem;
+    display: block;
+}
+
+header #lower-nav > * {
+    padding: 1rem 0;
+}
+
+header #lower-nav div.download{
+    border-bottom: #81818b 2px solid;
+}
+
+/* § Quando la viewport è minore di 992px => MD*/
+@media screen and (max-width:992px){
+
+}
+
+/* § Quando la viewport è minore di 768px => SM */
+@media screen and (max-width:768px){
+
+}
+
+/* § Quando la viewport è minore di 576px => XS */
+@media screen and (max-width:576px){
+    /* ? collasso della navbar */
+
+    header{
+        background-color: black;
+        width: 80px;
+        height: calc(100vh - 100px);
+    }
+
+    header section.playlists,
+    header span,
+    header a{
+        display: none;
+    }
+
+    header #upper-nav nav.main-menu li,
+    header #upper-nav nav.main-menu li.active,
+    header #upper-nav nav.main-menu li:hover{
+        border-left: none;
+    }
+
+    header #upper-nav .logo{
+        display: none;
+    }
+
+    header #upper-nav .logo-xs  {
+        display: flex;
+    }
+
+    header #upper-nav .logo-xs img {
+        height: 35px;
+    }
+
+    main{
+        width: calc(100% - 80px);
+    }
+}

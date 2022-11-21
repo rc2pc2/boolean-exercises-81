@@ -1,0 +1,56 @@
+/* RESET */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+main{
+    padding: 3rem;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.p-absolute{
+    position: absolute;
+}
+
+section.row-products{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+article.product{
+    display: inline-block;
+}
+
+article.product:hover span.favourite{
+    display: inline;
+}
+
+span.discount{
+    top: 0;
+    right: 0;
+}
+
+span.discount-30{
+    background-color: green;
+}
+
+span.discount-5{
+    background-color: red;
+}
+
+span.favourite{
+    display: none;
+    left: 50%;
+    bottom: 1rem;
+    font-size: 1.5rem;
+    color: red;
+}

@@ -1,0 +1,297 @@
+/* RESET */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.flex-centered{
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between{
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+
+.container-big{
+    margin:0 auto;
+    max-width: 1200px;
+}
+
+.container{
+    margin:0 auto;
+    max-width: 950px;
+}
+
+.color-blue{
+    color: blue;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+body>header{
+    height: 80px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+}
+
+h1{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+header nav{
+    width: 100%;
+    height: 100%;
+}
+
+header nav>ul{
+    /* background-color: aqua; */
+    /* width: 20%; */
+    height: 100%;
+    line-height: 80px;
+    list-style-type: none;
+    padding-right: 1.25rem;
+}
+
+header nav>ul li{
+    display:inline-block;
+}
+
+header nav>ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 1.25rem;
+}
+
+header nav>ul li a img{
+    vertical-align: middle;
+}
+
+main section#jumbotron{
+    padding-top: 80px;
+    background-color: #b4d0e7;
+    height: 83vh;
+}
+
+main section#jumbotron .container-big{
+    padding-top: 90px;
+}
+
+main section#jumbotron .jumbotron-content{
+    /* background-color: cornflowerblue; */
+    height: 500px;
+}
+
+main section#jumbotron div.jumbotron-info {
+    width: 30%;
+}
+
+section#jumbotron div.jumbotron-info p {
+    margin: 2rem 0;
+    font-size: .95rem;
+}
+
+
+main section#jumbotron div.jumbotron-image {
+    width: 70%;
+}
+
+main section#jumbotron div.jumbotron-image img {
+    width: 100%;
+}
+
+
+main section#business-plans{
+    padding-top: 125px;
+    font-weight: 300;
+}
+
+
+main section#business-plans h2{
+    font-size: 2.5rem;
+    padding: 2rem 0 3.5rem;
+    font-weight: 500;
+}
+
+main section#business-plans .input-group label{
+    margin-right: 1rem;
+
+}
+
+section div.columns > .col{
+    /* height: 500px; */
+    width: calc( (100% / 3 ) - 2rem);
+    margin: 2rem 0;
+    /* margin: 1rem 1rem; */
+    /* background-color: darkblue; */
+}
+
+section#business-plans div.col-full-width{
+    height: 200px;
+    background-color: aquamarine;
+    margin-bottom: 2rem;
+}
+
+section#business-plans .plan{
+    height: 100%;
+    border: 1px solid #d0d0d4;
+    font-size: .9rem;
+}
+
+section#business-plans .plan>header{
+    text-align: center;
+    padding: .5rem 1rem;
+    border-bottom: 1px solid #d0d0d4;
+}
+
+section#business-plans .plan>article{
+    padding: 2rem;
+}
+
+section#business-plans .plan>article h3{
+    font-size: 1.7rem;
+    font-weight: 400;
+    padding-bottom: .55rem;
+}
+
+
+section#business-plans .plan>article div.price{
+    font-weight: 400;
+}
+
+section#business-plans .plan>article div.period{
+    color: #7b7b7b;
+}
+
+section#business-plans .plan>article div{
+    padding-bottom: .55rem;
+}
+
+section#business-plans .plan>article a.button{
+    display: inline-block;
+    width: 100%;
+    font-size: .86rem;
+    padding: .6rem 0;
+}
+
+
+section#business-plans .plan>article div.buy-now{
+    padding: 2rem 0;
+}
+
+section#business-plans .plan>article hr{
+    width: 22.5%;
+    border: none;
+    height: 1px;
+    background-color: #d0d0d4;
+}
+
+section#business-plans .plan>article ul{
+    padding: 2rem 0;
+    list-style: none;
+}
+
+
+section#business-plans .plan>article ul>li{
+    padding: .5rem 0;
+}
+
+section#business-plans .plan>article ul i{
+    padding: .18rem .33rem 0 0;
+}
+
+section#business-plans .plan>article h4{
+    padding-top: 2.5rem;
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+section#partners{
+    margin-bottom: 2rem;
+}
+
+div.col-45{
+    width: 45%;
+    height: 500px;
+    background-color: crimson;
+}
+
+div.col-55{
+    width: 55%;
+    height: 500px;
+    background-color: cornflowerblue;
+}
+
+a.button{
+    text-decoration: none;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: .4rem 1rem;
+}
+
+a.button-inline{
+    display:inline;
+}
+
+a.button-blue{
+    display:inline;
+    background-color: #0061ff;
+}
+
+section#clients h2{
+    margin-bottom: 2rem;
+}
+
+div.squares{
+    /* height: 500px; */
+    background-color: blueviolet;
+}
+
+div.squares .square{
+    width: calc(100vw /3);
+    height: calc(100vw /3);
+    background-color: lime;
+}
+
+
+
+div.square div.card-client{
+    position: relative;
+    height: 50%;
+    width: 50%;
+    /* border: 3px red solid; */
+    background-color: aquamarine;
+    transition: all .05s ease-in-out;
+    border-color: rgba(255,255,255, .6) ;
+}
+
+
+div.square div.card-client:hover{
+    border: 1rem solid rgba(255,255,255, .6);
+}
+
+div.square div.card-client img{
+    position: absolute;
+    width: 55%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(1);
+}

@@ -1,0 +1,78 @@
+/* RESET */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 3vh;
+    right:3vw;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    height: 6rem;
+    width: 6rem;
+    padding: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    margin-left: 2rem;
+
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+header nav ul li:hover{
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    height: 100vh;
+    color: yellow;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+
+section img,
+section h2{
+    width: 40vw;
+    text-align: center;
+}
+
+.flex-centered{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+section#textile-shoe{
+    background-color: red;
+}
+
+section#tommy-shoe{
+    background-color: green;
+}
+
+section#converse-shoe{
+    background-color: yellow;
+    color: green;
+}

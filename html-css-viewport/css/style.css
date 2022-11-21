@@ -1,0 +1,44 @@
+/* RESET */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #cccccc;
+}
+
+main{
+    /* margin-top: 5rem; */
+    background-color: #e600ff;
+    margin-top: 5rem;
+    height: calc(90vh - 5rem);
+}
+
+header img{
+    height: 50px;
+    margin-right: 1.5rem;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline;
+    font-size: 1.4rem;
+    color: blue;
+}
+
+header ul li{
+    margin-right: 1rem;
+}

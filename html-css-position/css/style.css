@@ -1,0 +1,46 @@
+/* RESET */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+div.box{
+    position: relative;
+
+    background-color: aqua;
+    border: 2px solid blue;
+    padding-right: 16rem;
+}
+
+div.box:hover .favourite{
+    background-color: red;
+}
+
+div.favourite{
+    top: 0;
+    right: 0;
+    position: absolute;
+    font-size: 6rem;
+    background-color: violet;
+    width: 100px;
+    text-align: center;
+}
+
+div.double-favourite{
+    top: 70px;
+    right: 70px;
+    position: absolute;
+    font-size: 4rem;
+    background-color: lime;
+    width: 60px;
+    text-align: center;
+}
+
+.d-relative{
+    position:relative;
+}

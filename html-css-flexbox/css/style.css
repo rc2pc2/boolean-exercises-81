@@ -47,6 +47,7 @@ nav.main-menu{
 main{
     margin-top: 4rem;
     display:flex;
+    flex-direction: column;
     flex-wrap: wrap;
     height: 20rem;
 }
@@ -55,6 +56,7 @@ div.box{
     border: .5rem solid grey;
     background-color: aqua;
     flex-basis: calc( 100% / 5);
+    font-size: 4rem;
 }
 
 div.box-one{

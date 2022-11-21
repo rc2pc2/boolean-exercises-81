@@ -1,0 +1,203 @@
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
+/* variables */
+:root{
+    /* colore accento */
+    --main-accent-color: #0084fd;
+    /* colore accento due */
+    --secondary-accent-color:#fdc15f;
+    /* colore sfondo uno */
+    --main-bg-color: #b5ddff;
+    /* colore sfondo due */
+    --secondary-bg-color: #9792e4;
+}
+
+ *,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.color-violet{
+    color: var(--secondary-bg-color);
+}
+
+.p-relative{
+    position: relative;   
+}
+
+.button-violet{
+    color: white;
+    background-color: var(--secondary-bg-color);
+}
+
+header{
+    background-color: var(--main-accent-color);
+    color: white;
+    padding: 0 1.75rem;
+}
+
+
+.container{
+    width: 100%;
+    padding: 2rem;
+}
+
+.cards .card{
+    background-color:var(--main-bg-color);
+    width: 90%;
+    height: 300px;
+    margin: 2rem;
+}
+
+div.col{
+    margin: 2rem 2rem 4rem 2rem;
+    width: 100%;
+    /* margin-bottom: 2rem; */
+}
+
+a.button{
+    padding: .5rem 1.5rem;
+    border-radius: .75rem;
+    font-size: .75rem;
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figure.img-rounded{
+    overflow: hidden;
+    border-radius: 50%;
+    width: 100%;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 1.5rem;
+}
+
+section#planning{
+    background-color: var(--secondary-bg-color);
+}
+
+div.col.col-rounded{
+    border-radius: 50px;
+}
+
+section#planning div.col:first-child{
+    color: white;
+}
+
+
+section#planning div.col:first-child h2{
+    padding-top: 8rem;
+}
+
+section#planning div.col:last-child{
+    background-color: white;
+    padding: 2rem 4rem;
+    text-align: center;
+}
+
+section#planning h2
+{   
+    padding: 1rem 0;
+}
+
+
+section#about-us h2{
+    font-size: 4rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+section#about-us p{
+    padding-bottom: 2rem;
+    line-height: 2rem;
+}
+
+section#about-us p.quote{
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding-bottom: 2rem ;
+}
+span.quotation-mark{
+    position:absolute;
+    font-size: 18rem;
+    color: var(--secondary-bg-color);
+    top: -6rem;
+    left: 7rem;
+}
+
+/* 
+    RESPONSIVE
+*/
+
+/* | Maggiore uguale di 768px */
+/* TABLET */
+@media screen and (min-width: 768px ){
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cards .card{
+        background-color: var(--main-bg-color);
+        width: calc((100% / 3) - 2rem);
+        height: 300px;
+        margin: 1rem;
+    }
+
+    .cards .card:first-child{
+        background-color: var(--main-bg-color);
+        width: calc(((100% / 3) * 2) - 2rem);
+        height: 300px;
+    }
+
+    section#about-us div.col-about-us{
+        width: calc(67% - 4rem);
+    }
+
+    section#about-us div.col-quote{
+        width: calc(33% - 4rem);
+    }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px ){
+    .container{
+        width: 900px;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    div.col{
+        width: calc(50% - 4rem);
+    }
+
+    section#planning div.container{
+        align-items: flex-end;
+    }
+}

@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Flexbox Layouts</title>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+        <!-- Font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    </head>
+    <body>
+        <div class="wrapper flex flex-wrap">
+            <header class="flex flex-column flex-between">
+                <section id="upper-nav">
+                    <div class="logo">
+                        <img src="./img/logo.svg" alt="Spotify Logo">
+                    </div>
+
+                    <div class="logo-xs flex flex-centered">
+                        <img class="icon" src="./img/logo-small.svg" alt="Spotify Small Logo">
+                    </div>
+
+                    <nav class="main-menu">
+                        <ul>
+                            <li class="active flex flex-align-center">
+                                <img class="icon" src="./img/home.svg" alt="Home icon">
+                                <span>
+                                    Home
+                                </span>
+                            </li>
+                            <li class="flex flex-align-center">
+                                <img class="icon" src="./img/search.svg" alt="Lens icon">
+                                <span>
+                                    Cerca
+                                </span>
+
+                            </li>
+                            <li class="flex flex-align-center">
+                                <img class="icon" src="./img/libreria.svg" alt="Library icon">
+                                <span>
+                                    La tua libreria
+                                </span>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <section class="playlists">
+                        <h2>
+                            Playlist
+                        </h2>
+                        <a href="#">
+                            Crea playlist
+                        </a>
+                        <ul>
+                            <li class="playlist-item">
+                                Nome Playlist
+                            </li>
+                            <li class="playlist-item">
+                                Nome Playlist
+                            </li>
+                            <li class="playlist-item">
+                                Nome Playlist
+                            </li>
+                            <li class="playlist-item">
+                                Nome Playlist
+                            </li>
+                            <li class="playlist-item">
+                                Nome Playlist
+                            </li>
+                            <li class="playlist-item">
+                                Nome Playlist
+                            </li>
+                            <li class="playlist-item">
+                                Nome Playlist
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section id="lower-nav">
+                    <div class="download">
+                        <a href="#">
+                            Installa App
+                        </a>
+                    </div>
+                    <div class="user">
+                        <img class="icon" src="./img/profile.svg" alt="Profile icon">
+                        <a href="#">
+                            Jane Doe
+                        </a>
+                    </div>
+                </section>
+            </header>
+
+            <main>
+
+            </main>
+
+            <footer>
+
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+header{
+    /* height: 30vh; */
+    background-color: rgb(6, 53, 98);
+    color: white;
+}
+
+.my_product{
+    height: 200px;
+    background-color: aqua;
+    /* border: 5px solid black; */
+}

@@ -1,0 +1,143 @@
+/* RESET */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(17, 17, 75);
+    color: white;
+    font-size: 2rem;
+}
+
+div.container{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* MOBILE FIRST */
+
+img{
+    width: 100%;
+}
+
+div.box{
+    width: 100px;
+    height: 100px;
+    background-color: cyan; 
+    border-radius: 50%;
+}
+
+header{
+    width: 50px;
+    height: 100vh;
+    background-color: aqua;
+    color: black;
+}
+
+ul{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none; 
+}
+nav ul>li{
+    transition: all .15s ease-in-out;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+nav ul>li>h5{
+    display: none;
+}
+
+nav ul>li:hover{
+    transform: scale(1.2);
+    background-color: rgb(187, 241, 241);
+}
+
+
+@media screen and ( min-width: 568px){
+    img{
+        width: 50%;
+    }
+
+    header{
+        width: 200px;
+        height: 100vh;
+        background-color: aqua;
+        color: black;
+    }
+
+    nav ul>li{
+        transition: all .15s ease-in-out;
+        cursor: pointer;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+    
+    nav ul>li:hover{
+        transform: scale(1.2);
+        background-color: rgb(187, 241, 241);
+    }
+
+    nav ul>li>h5{
+        display: block;
+    }
+}
+
+@media screen and ( min-width: 768px){
+    img{
+        width: 33%;
+    }
+
+    div.box{
+        border-radius: 0;
+    }
+
+    header{
+        height: 85px;
+        width: 100%;
+    }
+
+    ul{
+        flex-direction: row;
+    }
+
+    ul>li{
+        width: calc(100% / 4);
+        background-color: grey;
+        border: 1rem solid blue;
+    }
+
+    ul>li>i.header-icon{
+        display: none;
+    }
+}
+
+
+/* desktop FIRST
+
+img{
+    width: 33%;
+}
+
+/* min-width => maggiore uguale */
+/* max-width => minore uguale */
+
+/* @media screen and ( max-width: 768px){
+    img{
+        width: 45%;
+    }
+} */
+
+/* @media screen and ( max-width: 568px){
+    img{
+        width: 100%;
+    }
+}  */

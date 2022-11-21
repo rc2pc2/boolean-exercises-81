@@ -1,0 +1,35 @@
+/* RESET */
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box{
+    background-color: magenta;
+    min-height: 50px;
+    border: 2px solid white;
+    color: white;
+    padding: 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.box-double{
+    min-height: 100px;
+}
+
+/* .box .box */
+.box div.row .box{
+    background-color: lime;
+    border-color: magenta;
+    font-size: .6rem;
+}
+
+section{
+    margin: 2rem 0;
+}
