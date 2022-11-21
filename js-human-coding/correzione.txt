@@ -1,0 +1,121 @@
+## 8  => Contare i posti a tavola di 2 in 2
+
+# zio Rino, la piccola Emy, zia Lucia e nonno Carlo
+
+    -   Parto da zero persone, anzi, visto che ci sono io parto da 2 persona
+    -   Guardo intorno alla sala e comincio a contare quanti siamo
+    -   Mentre conto passo davanti ai singoli parenti e con la mano destra e le dita a  forma di V, dico ad alta voce il numero a cui sono arrivato.
+    -   Fino a che non arrivo all'ultimo/a presente
+    -   Mi accorgo che l'ultimo presente è uno solo e non è una coppia
+    -   Perciò aggiungo un solo elemento alla fine.
+
+=======================================================================
+
+
+Durante le vacanze ho fatto mille mila foto, ora come faccio a scegliere quella giusta da caricare su Instagram? I paesaggi mozzafiato che ho visitato non ne avrebbero bisogno, però cercherò il filtro giusto per farla apparire più consona al contesto obrobbbbrioso in cui verrà inserita e rendere più saturi i colori, in modo che le foto portino più like.
+
+
+    -   Prendo il cellulare
+    -   Mi ricordo di respirare
+    -   Apro la galleria delle foto
+    -   E inizio a guardare tutte le foto che ho fatto durante le vacanze
+...A few moments later
+    -   Dobbiamo scegliere quella dei paesaggi?
+    -   Si.
+    -   Scelgo una foto tra quelle dei paesaggi, ne scelgo una a caso.
+    -   La carico su Instagram
+    -   Apro l'opzione dei filtri
+    -   Guardo tutti i filtri:
+        -   FINCHE' non trovo il filtro giusto:
+                -   Cerco un altro filtro
+    -   Applico il filtro
+    -   Penso a quanti tag io debba scrivere per avere più views
+    -   Perdo circa mezza giornata a scriverli
+    -   Pubblico il post
+    -   Spendo il resto della giornata a controllare che TUTTI I MIEI AMICI CHE SI CONSIDERANO TALI abbiamo entro un'ora messo un like alla mia foto.
+        SE ho un'amica o un amico che non ha messo un like alla mia foto
+            E
+        contattandola o contattandolo non ha avuto un valido motivo (decesso, incidente, mancanza di vita):
+            ALLORA:
+                -   Cambio amico/A
+                -   Ban in real life
+                -   UNFOLLOW
+                -   Crea un post CERCASI AMICI NUOVI perché *AMICO MALVAGIO* HA TRADITO LA MIA PERSONA
+    -   Vado a dormire tranquilla o tranquillo
+    -   Piango nel letto.
+
+
+
+
+=======================================================================
+
+
+    -   Abbiamo almeno due mazzi (e non più di sei) di 52 carte francesi, già mischiate
+
+    -   Ogni giocatore fa la sua puntata, senza la quale dovrà astenersi dal partecipare:
+        -  Valuto quante fiches puntare, le suddivido e le metto sul banco:
+            -   Contiamo quale sia la somma di fiches che abbiamo a disposizione
+            -   Valuto il tipo di gioco in base alla disponibilità residua
+
+            -   SE ho almeno una fiche:
+                -   SE scelgo di giocare in maniera rischiosa:
+                    -   punterò TUTTO
+                -   ALTRIMENTI SE SONO ubriaco
+                    -   SE ho una casa:
+                        -   punterò anche la mia casa
+                    -   ALTRIMENTI SE ho un garage:
+                        -   punterò anche il garage
+                    -   ALTRIMENTI SE sono sposato:
+                        -   punto anche mia suocera
+                -   ALTRIMENTI
+                    -   punto umanamente una fiche di basso valore
+            -   ALTRIMENTI (non ho nessuna fiche):
+                -   Guardo e non gioco.
+
+    -   Guardo il banco distribuire le carte una ad una in senso orario, tutte scoperte:
+        -   Il banco prende il mazzo
+        -   Il banco verifica quali giocatori hanno puntato e quali no.
+            -   E inserisce i giocatori che hanno puntato nella lista dei giocatori attivi
+
+        FINCHE' ho un giocatore attivo al tavolo, scorro i giocatori attivi in senso orario:
+            SE non ha una carta:
+                - gli consegno una carta scoperta
+            SE INVECE ha una carta E tutti i giocatori attivi prima di lui ne hanno almeno una:
+                SE il banco non ha una carta:
+                    -   aggiungi una carta scoperta al banco
+                - consegno un'altra carta al prossimo giocatore
+        -   Aggiungo una carta coperta al banco
+
+        SCORRO la lista dei giocatori attivi:
+            Il banco chiede se vuole una carta:
+                FINCHE' il giocatore attivo VUOLE una carta:
+                    -   SE la somma delle carte scoperte del giocatore è maggiore o uguale a 21:
+                        -   passo automaticamente al giocatore successivo.
+                    -   Prendo la prima carta dal mazzo e la giro davanti al giocatore
+
+        -   Il banco scopre la carta coperta:
+           FINCHE' la somma delle carte del banco è minore della somma più alta tra tutti i giocatori attivi
+                E
+            è minore di 17:
+                -   Il banco estrae un'altra carta
+
+        -   Valutiamo le vincite:
+
+            -   FINCHE' c'è un giocatore attivo:
+                -   Guardiamo la somma delle sue carte:
+                    SE la somma è superiore a 21:
+                        - Il giocatore ha perso e la sua puntata è recuperata dal banco
+
+                    ALTRIMENTI (la somma è inferiore a 21):
+                        -   SE il giocatore ha una somma minore a quella del banco:
+                            - Il giocatore ha perso e la sua puntata è recuperata dal banco
+
+                        -   SE il giocatore ha la stessa somma del banco:
+                            - Il giocatore riprende la sua puntata originale
+
+                        -   SE il giocatore ha fatto 21:
+                            -   Il giocatore vince puntata originale * 2.5
+
+                        -   ALTRIMENTI
+                            - Il giocatore vince puntata originale * 2.
+

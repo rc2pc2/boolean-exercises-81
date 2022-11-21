@@ -1,0 +1,42 @@
+
+    -   Ho bisogno di una lista di studenti
+    -   Apro la lista degli studenti
+
+
+    Prendo la lista degli studenti
+
+    Scelgo un nome casuale
+
+    Pronuncio il suo nome
+
+    Scelgo un altro nome casuale che non sia quello di prima
+
+=======================================================================
+
+    Prendo la lista degli studenti
+
+    Scorro la lista degli studenti:
+            A Seleziono uno studente casualmente
+                SE lo studente non è già stato chiamato:
+                    - Lo seleziono
+                ALTRIMENTI
+                    - Ne seleziono un altro
+
+    Continuo finché non ho selezionato tutti gli studenti
+
+
+=======================================================================
+
+
+    Prendo la lista degli studenti
+    Preparo un foglio separato in cui inserire gli studenti già selezionati
+
+    FINCHE' il foglio separato non è pieno di tutti gli studenti:
+        *** - scelgo uno studente casuale dalla lista degli studenti:
+                SE lo studente non è stato chiamato:
+                    -   Lo chiamo e scrivo il suo nome nel foglio separato
+                ALTRIMENTI:
+                    -   scelgo un altro studente ***
+
+    => risultato finale => foglio separato pieno di tutti gli studenti
+    => per ricominciare prendo un nuovo foglio separato, o cancello quello precedente
