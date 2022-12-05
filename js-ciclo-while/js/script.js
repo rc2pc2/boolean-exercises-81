@@ -1,5 +1,3 @@
-
-
 const lista = [
    'carote',
    'fagiolini',
@@ -53,23 +51,23 @@ const lista = [
  *
  */
 
-const names = [
-   'Michela',
-   'Giuseppina',
-   'Taylor',
-   'Donna',
-   'Marsha',
-   'Fabio',
-   'Roberto',
-   'Giada',
-   'Donato',
-   'Matteo',
-   'Florian',
-];
+// const names = [
+//    'Michela',
+//    'Giuseppina',
+//    'Taylor',
+//    'Donna',
+//    'Marsha',
+//    'Fabio',
+//    'Roberto',
+//    'Giada',
+//    'Donato',
+//    'Matteo',
+//    'Florian',
+// ];
 
-const lastNames = ['Cappelletti', 'Jager', 'Porcinelli' , 'Buffetti' , 'Forghieri', 'Papagni', 'Marazzini', 'Giallini', 'Robertozzi']
+// const lastNames = ['Cappelletti', 'Jager', 'Porcinelli' , 'Buffetti' , 'Forghieri', 'Papagni', 'Marazzini', 'Giallini', 'Robertozzi']
 
-const guests = [];
+// const guests = [];
 
 //   for (let i = 0 ; i < 7 ; i++){
 //       guests.push(`${names[i]} ${lastNames[i]}`  );
@@ -130,6 +128,60 @@ const guests = [];
 
 // console.log(text);
 
+// § <li class="list-group-item"> Articolo </li>
+
+// const shoppingCart = [
+//    'ssd nvme',
+//    'hdd 40tb',
+//    'monitor oled 142\'\'',
+//    '4x Nvidia 5090TI',
+//    'case ATX',
+//    'RBX 554s',
+//    'SLL 36 Native',
+//    'Nevica 88F',
+//    'Motosega',
+//    'Cera al lanciafiamme',
+//    'case ATX',
+//    'RBX 554s',
+//    'SLL 36 Native',
+//    'Nevica 88F',
+//    'Motosega',
+//    'Cera al lanciafiamme',
+// ];
+
+// const ulElement = document.querySelector('ul.list-group');
+
+
+// for (let i = 0 ; i < shoppingCart.length ; i++){
+//    const newLiElement = document.createElement('li');
+
+//    // # alternativa newLiElement.className = "list-group-item"
+//    newLiElement.classList.add('list-group-item');
+
+//    // ? newLiElement.innerHTML = '<p>' + shoppingCart[i] + '</p>';
+//    // § newLiElement.append(shoppingCart[i]);
+//    newLiElement.innerText = shoppingCart[i];
+
+//    ulElement.append(newLiElement);
+// // }
+
+// let index = 0;
+// while (index < shoppingCart.length){
+
+//    const newLiElement = document.createElement('li');
+
+//    // # alternativa newLiElement.className = "list-group-item"
+//    newLiElement.classList.add('list-group-item');
+
+//    // ? newLiElement.innerHTML = '<p>' + shoppingCart[i] + '</p>';
+//    // § newLiElement.append(shoppingCart[index]);
+//    newLiElement.innerText = shoppingCart[index];
+
+//    // Ruggero talks
+//    ulElement.appendChild(newLiElement);
+
+//    index++;
+// }
 
 
 
@@ -157,3 +209,104 @@ const guests = [];
 // ! array.push(elemento)
 // # array.includes(elementoDaCercare)
 // § array.indexOf(elementoDaCercare) => l'indice, -1 se non lo trova
+
+
+// Prendere due array della stessa lunghezza e generarne un terzo, prendendo alternativamente gli elementi da uno e dall'altro es. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
+
+// const charsList = ['a', 'b', 'c', 'd', 'e'];
+// const numsList = [1, 2, 3, 4, 5];
+
+// const newList = [];
+
+// for( let i = 0 ; i < charsList.length ; i++){
+//    newList.push( charsList[i], numsList[i]);
+// }
+
+
+// console.log(newList);
+
+
+// let variabile = getRandomNumber(0, 10);
+// console.log(variabile);
+
+function saluta(nomeUno, nomeDue){
+   console.warn('ciao! ' + nomeUno);
+   console.warn('ciao! ' + nomeDue);
+}
+
+/**
+ * Function that return a random number between the given interval, inclusively
+ */
+function getRandomNumber(numMin, numMax){
+   const randomNumber = Math.floor( Math.random() * (numMax - numMin + 1) + numMin );
+   // ? return => restituisco il valore inserito dopo di me A CHIUNQUE INVOCHI CORRETTAMENTE questa funzione
+   return randomNumber;
+}
+
+function isOdd(number){
+   if (number % 2 === 1 ){
+      return true;
+   } else {
+      return false;
+   }
+}
+
+function isEven(number){
+   if (number % 2 === 0 ){
+      return true;
+   } else {
+      return false;
+   }
+}
+
+
+// const userNumber = parseInt( prompt('inserisci un numero'));
+
+// console.log(isEven(userNumber) );
+
+/**
+ * Crea una funzione che accetti due argomenti, e che restituisca un valore numerico randomico tra i due argomenti inclusi.
+ */
+
+function getRandomNumber(numMin, numMax){
+   if (numMin === numMax){
+      return numMax;
+   }
+
+   const randomNumber = Math.floor( Math.random() * (numMax - numMin + 1) + numMin );
+   // ? return => restituisco il valore inserito dopo di me A CHIUNQUE INVOCHI CORRETTAMENTE questa funzione
+   return randomNumber;
+}
+
+
+/**
+ *
+ * Crea una funzione che dato un array, calcoli la somma dei suoi elementi.
+ *
+ */
+
+function getSumOfArrayElements(array){
+   // la somma dei suoi elementi, se sono una stringa o non sono convertibili in un numero allora non li sommo.
+   let sum = 0;
+
+   // prendere ogni elemento dell'array
+   for (let i = 0 ; i < array.length ; i++){
+      // controllare se l'elemento è un numero aggiungibile
+      const castedElement = parseInt(array[i], 10);
+
+      if ( !Number.isNaN(castedElement) ){
+         sum = sum + castedElement;
+      }
+
+   }
+
+   return sum;
+}
+
+const list = ['0x51232f','2', '1', 10, 22, 33, 2];
+const list2 = ['0x51232f','2', '1', 10, 22, 33, 2];
+const numeri = [2,2,2,2,2,2,2,2,2,2,2];
+const numeretti = [3,3,3,3,3,3,3,3,3,3,3];
+
+console.log(getSumOfArrayElements(list));
+console.log(getSumOfArrayElements(list2));
