@@ -55,8 +55,10 @@ images.forEach((slide, index) => {
    newThumbnail.setAttribute(attributeName, index);
    newThumbnail.innerHTML = `<img src="${slide.image}" alt="${slide.title}'s image">`;
 
+
+
    newThumbnail.addEventListener('click', function(){
-      activeIndex = changeSlide(parseInt(this.getAttribute(attributeName), 10));
+      activeIndex = changeSlide(index);
    });
 
    // la aggiungo al parent
