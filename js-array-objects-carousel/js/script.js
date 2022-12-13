@@ -48,14 +48,11 @@ images.forEach((slide, index) => {
          <p>${slide.text}</p>
       </div>`;
 
-
    // creo una thumbnail e le attribuisco tutte le caratteristiche necessarie
    const newThumbnail = document.createElement('div');
    newThumbnail.className = 'my_thumbnail-item';
    newThumbnail.setAttribute(attributeName, index);
    newThumbnail.innerHTML = `<img src="${slide.image}" alt="${slide.title}'s image">`;
-
-
 
    newThumbnail.addEventListener('click', function(){
       activeIndex = changeSlide(index);
