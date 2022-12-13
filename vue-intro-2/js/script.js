@@ -6,14 +6,16 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            title : `Lorem  ndiqodnqwi onqwdio qnwdionqwdon`,
-            imageSrc : 'Lorem  ndiqodnqwi onqwdio qnwdionqwdon ',
+            isHappy : false,
+            students : [
+                'Gina',
+                'Gino',
+                'Pina',
+                'Pino'
+            ]
         }
     },
 
     methods: {
-
     }
-
-
 }).mount('#app');

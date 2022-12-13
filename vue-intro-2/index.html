@@ -22,7 +22,7 @@
 
         <header class="p-5">
             <h1 class="container">
-                {{ title }}
+                Vue Intro 2
             </h1>
         </header>
 
@@ -30,12 +30,27 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <img class="img-fluid" :src="imageSrc" alt="Leonardo di Caprio">
+                        <label for="isUserHappy">Sei felice?</label>
+                        <input type="checkbox" name="isUserHappy" id="isUserHappy" v-model="isHappy">
                     </div>
+
+                    <!-- <div v-if="!isHappy" class="col-12" :class="(isHappy) ? 'border-3' : 'border-dark'">
+                        <img  class="img-fluid" src="https://www.happierhuman.com/wp-content/uploads/2022/04/happy-memes-sayingimages-dont-worry-be-happy.jpg" alt="Happy dog">
+                    </div>
+
+                    <div v-else class="col-12">
+                        <img class="img-fluid" src="https://preview.redd.it/cycj6kdtukj61.jpg?auto=webp&s=050c9711fa7cc165d6d76b6ebe32813cc1a9254d" alt="Great!">
+                    </div> -->
+
                     <div class="col-12">
-                        <div class="input-group">
-                            <input type="text" v-model="imageSrc">
-                        </div>
+                        <ul>
+                            <li v-for="student in students">
+                                {{  student  }}
+                            </li>
+                        </ul>
+                        <span v-for="n in 10">
+                            {{ n }} - oggettino
+                        </span>
                     </div>
                 </div>
             </div>
