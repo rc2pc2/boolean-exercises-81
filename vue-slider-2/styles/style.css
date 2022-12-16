@@ -1,0 +1,62 @@
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    background-color: rgb(4, 19, 44);
+    color: white;
+}
+
+.custom-border-radius{
+    border-radius: 1rem;
+}
+
+div#slider{
+    margin-top: 20vh;
+    border: 3px solid white;
+    height: 50vh;
+    display: flex;
+}
+
+div#slider div.images{
+    width: 76%;
+    background-color: aqua;
+}
+div#slider div.images img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div#slider div.thumbnails{
+    width: 24%;
+    /* background-color: lime; */
+}
+
+div#slider div.thumbnails img{
+    width: 100%;
+    height: calc(100% / 5);
+    object-fit: cover;
+    /* background-color: lime; */
+    opacity: .4;
+    border: 2px solid transparent;
+    transition: all 1s ease;
+    cursor: crosshair;
+}
+
+div#slider div.thumbnails img.active{
+    opacity: 1;
+    border: 2px solid white;
+}
+
+div#slider div.thumbnails img:hover{
+    border: 2px solid white;
+    opacity: 1;
+    filter: brightness(150%);
+}
+
+div#slider div.buttons{
+    width: 200px;
+    bottom: .5rem;
+    left: 38%;
+    transform: translateX(-50%)
+}

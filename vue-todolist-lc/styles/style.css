@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(12, 37, 78);
+    color:white;
+}
+
+h2{
+    margin: 1rem 0;
+}
+
+ul {
+    /* padding-left: 1rem; */
+    width: 60%;
+    list-style-type: none;
+    border: 1.5px solid white;
+}
+
+ul li {
+    padding: 1rem;
+    border: 3px solid white;
+    display:flex;
+    justify-content: space-between;
+}
+
+ul li p.done{
+    text-decoration: line-through;
+}
+
+ul li i:hover {
+    transition: all .5s ease;
+    cursor: pointer;
+    color: magenta;
+    background-color: yellow;
+    border-radius: 3px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.todolist-wrapper{
+    padding: 0 3rem;
+}

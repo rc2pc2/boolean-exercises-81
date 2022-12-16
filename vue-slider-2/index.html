@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue New Slider</title>
+
+
+    <!-- Importing Bootstrap v5.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <!-- creo un div dove sarà attivo VUE -->
+    <div id="app">
+
+        <main class="p-5 w-75 mx-auto ">
+            <div id="slider" class=" w-100 position-relative">
+                <div class="images">
+                    <img :src="imagesList[activeIndex].image" alt="Carousel slide">
+                </div>
+                <div class="thumbnails">
+                    <img v-for="(element, index) in imagesList" :src="element.image"
+                    alt="Thumbnail element" :class="(index === activeIndex) ? 'active' : ''"
+                    @click="changeSlide(index)"
+                    >
+                </div>
+                <div class="buttons d-flex justify-content-between position-absolute">
+                    <button class="btn btn-secondary btn-xs"
+                    @click="previousSlide()">Prev</button>
+
+                    <button class="btn btn-secondary btn-xs"
+                    @click="nextSlide()">Next</button>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- Importiamo JS -->
+    <script type="text/javascript" src="./js/script.js "></script>
+</body>
+</html>
