@@ -6,29 +6,35 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            randomNumber : null,
+            randomPlayerNumber : null,
+            randomAINumber : null,
         }
     },
 
     methods: {
-        generateRandomNumber(){
+    },
+
+    mounted(){
+
+        setTimeout(()=> {
+
             axios.get('https://flynn.boolean.careers/exercises/api/random/int')
             .then((response) => {
                 console.log(response.data.response);
                 console.log(this)
-                this.randomNumber = response.data.response;
-            })
-            .catch(  function(error){
-                console.warn(error)        // se non trovo che faccio?
-            })
-            .then(() => {
-                // fallo sempre
+                this.randomPlayerNumber = response.data.response;
             });
-        }
-    },
 
-    created(){
-        this.getRandomNumber();
+            axios.get('https://flynn.boolean.careers/exercises/api/random/int')
+            .then((response) => {
+                console.log(response.data.response);
+                console.log(this)
+                this.randomAINumber = response.data.response;
+            })
+        },
+            2000
+        )
+
     }
 
 

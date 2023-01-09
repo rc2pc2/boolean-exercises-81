@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vue Api</title>
+    <title>Vue Email List</title>
 
 
     <!-- Importing Bootstrap v5.2 -->
@@ -23,24 +23,22 @@
 
         <header class="p-5">
             <h1 class="container">
-                Vue Api
+                Vue email list
             </h1>
         </header>
 
         <main class="p-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-12" v-if="(randomPlayerNumber != null) && (randomAINumber != null)">
-                        <h1 >
-                            Ha vinto: {{ ( randomAINumber > randomPlayerNumber) ?  ' l\'intelligenza artificiale! ' + randomAINumber : ' il giocatore! ' + randomPlayerNumber }}
-                        </h1>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis quisquam nihil eum cumque quo quidem cum inventore corrupti architecto fugit deleniti est, saepe error, atque, tempora quasi delectus perspiciatis aliquid.
+                    <div class="col-12">
+                        <ul v-if="emailList.length >= 10">
+                            <li v-for="email in emailList"> - {{ email }} - </li>
+                        </ul>
+                        <p v-else>
+                            Le email sono in caricamento, attendere prego...
                         </p>
                     </div>
-                    <div v-else class="col-12">
-                        <h2>Bono che sto a caricà</h2>
-                    </div>
+
                 </div>
             </div>
         </main>
