@@ -11,26 +11,22 @@ export default{
         return{
             store,
             apiUrl : 'https://rickandmortyapi.com/api/character',
-            prev: null,
-            next: null,
         }
     },
 
     methods:{
-        getCharacters(apiAddress){
+        getCharacters(searchedString){
             // recupero attraverso una chiamata AJAX i personaggi di rick & morty
             // console.log('chiamata axios');
-            axios.get(apiAddress, {
+            axios.get(this.apiUrl, {
                 params: {
-                    // page : page
+                    name : searchedString,
                 }
             })
             .then((response) => {
                 console.log(response.data.results);
                 // console.log(this);
                 this.store.charactersList = response.data.results;
-                this.prev = response.data.info.prev;
-                this.next = response.data.info.next;
             })
             .catch(function (error) {
                 console.warn(error);
@@ -43,7 +39,7 @@ export default{
     },
 
     created(){
-        this.getCharacters(this.apiUrl);
+        this.getCharacters();
     },
 
   components:{
@@ -59,8 +55,7 @@ export default{
 <template>
   <header>
     <AppHeader
-        @prevPage="getCharacters(prev)"
-        @nextPage="getCharacters(next)"
+        @search="getCharacters"
       />
   </header>
 
