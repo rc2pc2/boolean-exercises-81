@@ -1,10 +1,9 @@
 <script>
-
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
+import ResultsMessage from './components/ResultsMessage.vue';
 
 export default{
-
   data(){
     return{
     }
@@ -12,21 +11,22 @@ export default{
 
   components:{
     AppHeader,
-    AppMain
-  },
+    AppMain,
+    ResultsMessage
+},
 
 }
 
 </script>
 
 <template>
-
   <header>
     <AppHeader />
   </header>
 
   <main>
     <AppMain />
+    <ResultsMessage />
   </main>
 </template>
 
@@ -41,5 +41,4 @@ main{
   padding: 2rem;
   text-align: center;
 }
-
 </style>

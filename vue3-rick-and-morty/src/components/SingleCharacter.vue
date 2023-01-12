@@ -2,7 +2,7 @@
 import { store } from '../store.js';
 
 export default {
-    name: 'AppCharacter',
+    name: 'SingleCharacter',
     props:{
         character : {
             type: Object,
@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-    <article class="single-character" :data-custom-id="character.id">
+    <article class="single-character col-6 col-md-4 col-lg-2 mb-2" :data-custom-id="character.id">
         <img :src="character.image" :alt="character.name" class="img-fluid">
         <h5 class="text-warning">{{ character.name }}</h5>
         <p>

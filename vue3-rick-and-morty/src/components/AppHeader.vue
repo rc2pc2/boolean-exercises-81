@@ -26,7 +26,7 @@ export default {
                 this.store.charactersList = response.data.results;
             })
             .catch(function (error) {
-                console.log(error);
+                console.warn(error);
             })
         },
     },
