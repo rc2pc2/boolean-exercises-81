@@ -5,6 +5,7 @@ import axios from 'axios';
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
 import ResultsMessage from './components/ResultsMessage.vue';
+import FooterComponent from './components/FooterComponent.vue';
 
 export default{
   data(){
@@ -15,12 +16,13 @@ export default{
     },
 
     methods:{
-        getCharacters(searchedString){
+        getCharacters(selectedSpecies, characterName){
             // recupero attraverso una chiamata AJAX i personaggi di rick & morty
             // console.log('chiamata axios');
             axios.get(this.apiUrl, {
                 params: {
-                    name : searchedString,
+                    name : characterName,
+                    species: selectedSpecies
                 }
             })
             .then((response) => {
@@ -45,7 +47,8 @@ export default{
   components:{
     AppHeader,
     AppMain,
-    ResultsMessage
+    ResultsMessage,
+    FooterComponent
 },
 
 }
@@ -63,6 +66,8 @@ export default{
     <AppMain />
     <ResultsMessage />
   </main>
+
+  <FooterComponent />
 </template>
 
 <style lang="scss">
